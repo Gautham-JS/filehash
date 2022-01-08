@@ -1,0 +1,197 @@
+:root {
+    --primary: #cc2b5e;
+    --secondary: #734b6d;
+    --fullwidth: 100%;
+    --borderradius: 25px;
+    --mainlg: linear-gradient(45deg, #cc2b5e, #753a88);
+    --altlg: linear-gradient(45deg, #42275a, #734b6d);
+    --selection: #ddd6f3;
+  }
+
+@font-face {
+    font-family: YellowtailRegular;
+    src: url(http://127.0.0.1:11311/res/fonts/Yellowtail/Yellowtail-Regular.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: BebasNeue;
+    src: url(http://127.0.0.1:11311/res/fonts/BebasNeue/BebasNeue-Regular.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: RobotoLight;
+    src: url(http://127.0.0.1:11311/res/fonts/Roboto/Roboto-Light.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url(http://127.0.0.1:11311/res/fonts/SpaceGrotesk/SpaceGrotesk-VariableFont_wght.ttf);
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+}
+
+.titlebar {
+    overflow: hidden;
+    text-align: center;
+    background-image: var(--mainlg);
+    font-family: YellowtailRegular;
+    color: whitesmoke;
+    font-size: 80px;
+    padding: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.topnav .navbutton {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: var(--borderradius);
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: SpaceGrotesk;
+}
+
+.topnav .navbutton:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: var(--borderradius);
+}
+
+.topnav #active {
+    background-image: var(--mainlg);
+    color: white;
+    border-radius: var(--borderradius);
+}
+
+.mainbody {
+    overflow: hidden;
+    text-align: center;
+}
+
+.mainbody .heading {
+    font-family: SpaceGrotesk;
+    font-size: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.mainbody .contentpara{
+    font-family: RobotoLight;
+    font-size: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    line-height: 30px;
+}
+
+.mainbody .optionbuttons {
+    text-align: center;
+    font-family: SpaceGrotesk;
+    font-size: 20px;
+    padding:40px;
+}
+
+.mainbody ._optionbutton {
+    padding: 20px;
+    margin: 20px;
+    border-radius: var(--borderradius);
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.mainbody #downloadsysc {
+    background-color:  var(--primary);
+}
+
+.mainbody #usewebservers {
+    background-color: var(--secondary);
+}
+
+.btn {
+    background-color: var(--primary);
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: var(--borderradius);
+    border-width: 2px;
+    border-style: solid;
+}
+.btn:hover {
+    border-width: 2px;
+    border-color: var(--secondary);
+    border-style: solid;
+}
+.btn:active {
+    background-color: var(--selection);
+    color: #333;
+}
+#submitbtn {
+    background-color: var(--secondary);
+    font-family: SpaceGrotesk;
+    width: 180px;
+}
+#submitbtn:active {
+    background-color: var(--selection);
+    color: #333;
+}
+.btn:active {
+    background-color: var(--selection);
+    color: #333;
+}
+
+.uploadprompt {
+    font-family: RobotoLight;
+    font-size: 20px;
+}
+
+#interactionspace {
+    padding-bottom: 40px;
+}
+
+.txspacelog {
+    font-family: RobotoLight;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.resline {
+    display: block;
+}
+
+#cidresult {
+    font-family: SpaceGrotesk;
+    font-size: 25px;
+}
+
+
+td .inforow {
+    height: 80px;
+    width: 160px;
+    text-align: center;
+    vertical-align: middle;
+  }

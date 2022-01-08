@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://127.0.0.1:11311/styles/main.css">
+    <script src="http://127.0.0.1:11311/src/filehandler.js"></script> 
+    <title>DFileStore - F Upload</title>
+</head>
+<body>
+    <div class="titlebar">
+        <p>
+            filehash
+        </p>
+    </div> 
+    <div class="topnav">
+        <a class="navbutton" href="http://127.0.0.1:11311/home">Home</a>
+        <a class="navbutton" href="http://127.0.0.1:11311/filetx">File Transfer</a>
+        <a class="navbutton" id="active" href="http://127.0.0.1:11311/upload">File Upload</a>
+        <a class="navbutton" href="http://127.0.0.1:11311/access">File Access</a>
+        <!-- <a class="navbutton" href="#godview">Network God View</a> -->
+    </div>
+    <div class="mainbody">
+        <div id="intro">
+            <p class="heading">
+                IPFS File Upload.
+            </p>
+            <p class="contentpara">
+                Upload files to IPFS P2P Store. 
+            </p>
+        </div>
+        <div id="transferspace">
+            <div id="interactionspace">
+                <label class="uploadprompt">
+                    Select a document :
+                    <input class="btn" type="file" id="IPFSupload" name="filename"/>
+                </label>
+                <input class="btn" type="submit" id="submitbtn" value="Upload Document" onclick="uploadFile()"/>
+            </div>
+        </div>
+        <!-- <div class="optionbuttons">
+            <a class="_optionbutton" id="downloadsysc" href="#downloadsysclient">Transfer By Reference</a>
+            <a class="_optionbutton" id="usewebservers" href="#webserver">Transfer Raw File</a>
+        </div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://127.0.0.1:11311/styles/main.css">
+    <link rel="stylesheet" href="http://127.0.0.1:11311/styles/accesspage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="http://127.0.0.1:11311/src/filehandler.js"></script> 
+    <script src="http://127.0.0.1:11311/src/accesspage.js"></script> 
+    <title>DFileStore - F Access</title>
+</head>
+<body>
+    <div class="titlebar">
+        <p>
+            filehash
+        </p>
+    </div> 
+    <div class="topnav">
+        <a class="navbutton" href="http://127.0.0.1:11311/home">Home</a>
+        <a class="navbutton" href="http://127.0.0.1:11311/filetx">File Transfer</a>
+        <a class="navbutton" href="http://127.0.0.1:11311/upload">File Upload</a>
+        <a class="navbutton" id="active" href="http://127.0.0.1:11311/access">File Access</a>
+        <!-- <a class="navbutton" href="#godview">Network God View</a> -->
+    </div>
+    <div class="mainbody">
+        <div id="intro">
+            <p class="heading">
+                IPFS File List.
+            </p>
+            <p class="contentpara">
+                List of all files uploaded by Filehash IPFS Interface. 
+            </p>
+        </div>
+        <div id="listspace">
+            <div id="interactionspace">
+                <a class="ispaceinfo" id="res">Loading list of IPFS files...</a>
+                <table id="filelist" onload="loadFileList()">
+                    <tr class="headerrow">
+                        <th class="headeritem">File Name</th>
+                        <th class="headeritem">CID</th>
+                        <th class="headeritem">Time Created</th>
+                        <th class="headeritem">Pin Status</th>
+                        <th class="headeritem">Info</th>
+                    </tr>
+                    <tr>
+                        <td><p>Upload at 2021-12-29T12:08:13.074Z</p></td>
+                        <td><p>bafybeicvzkzaznntja6k3h2nuflqxdiqdvx6g7w4zou6wjm3nryhsoei6e</p></td>
+                        <td><p>2021-12-29T09:38:41.257+00:00</p></td>
+                        <td><p>Pinned</p></td>
+                        <td>
+                            <p><button class="rowbtn">Get Info</p></button>
+                        </td>
+                    </tr>
+                    <tr><td colspan="5"><div><p>----</p></div>
+                    </td></tr>
+                </table>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

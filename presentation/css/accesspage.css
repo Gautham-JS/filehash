@@ -1,0 +1,67 @@
+:root {
+    --primary: #cc2b5e;
+    --secondary: #734b6d;
+    --fullwidth: 100%;
+    --borderradius: 25px;
+    --mainlg: linear-gradient(45deg, #cc2b5e, #753a88);
+    --altlg: linear-gradient(45deg, #42275a, #734b6d);
+    --selection: #ddd6f3;
+  }
+
+@font-face {
+    font-family: YellowtailRegular;
+    src: url(../resources/Fonts/Yellowtail/Yellowtail-Regular.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: BebasNeue;
+    src: url(../resources/Fonts/BebasNeue/BebasNeue-Regular.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: RobotoLight;
+    src: url(../resources/Fonts/Roboto/Roboto-Light.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url(../resources/Fonts/SpaceGrotesk/SpaceGrotesk-VariableFont_wght.ttf);
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+}
+
+#interactionspace {
+    font-family: RobotoLight;
+    font-size: 20px;
+}
+
+#filelist {
+    font-size: 16px;
+    width:90%; 
+    margin-top: 15px;
+    margin-left:5%; 
+    margin-right:5%;
+    border-radius: var(--borderradius);
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--primary);
+}
+
+.headerrow {
+    font-family: SpaceGrotesk;
+    font-size: 20px;
+}
+
+
+th {
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
+td {
+    padding: 10px;
+    border-collapse: collapse;
+}

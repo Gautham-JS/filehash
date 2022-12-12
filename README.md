@@ -25,4 +25,6 @@ Pull all the dependencies :
 
 Finally run with :
 
-`./run.sh`
+`./run.sh -p 8080`
+
+-p defines the port, default is 11211

@@ -19,5 +19,10 @@ Then you can create an Access Token at https://web3.storage/tokens/ ; This acces
 Thats all.
 
 ## Starting up
+Pull all the dependencies :
+
+`npm install`
+
+Finally run with :
 
 `./run.sh`
